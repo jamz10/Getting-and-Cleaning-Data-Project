@@ -2,19 +2,19 @@
 
 # First step is to download zip file and put in data folder
 
-#if(!file.exists("./data")){dir.create("./data")}
-#fileUrl <- "http://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip"
-#download.file(fileUrl,destfile="./data/Dataset.zip")
+if(!file.exists("./data")){dir.create("./data")}
+fileUrl <- "http://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip"
+download.file(fileUrl,destfile="./data/Dataset.zip")
 
 # Go ahead and unzip the file
 
-#unzip(zipfile="./data/Dataset.zip",exdir="./data")
+unzip(zipfile="./data/Dataset.zip",exdir="./data")
 
 # all unzipped files get placed in folder UCI HAR Dataset. Get the list of all files
 
 path <- file.path("./data" , "UCI HAR Dataset")
-#all_files<-list.files(path, recursive=TRUE)
-#all_files
+all_files<-list.files(path, recursive=TRUE)
+all_files
 
 # Below R script meets project steps and does the following:
 
